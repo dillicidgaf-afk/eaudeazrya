@@ -3,59 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eau De Azrya | Master Document</title>
+    <title>Eau De Azrya | Infrastructure for Perfume Formulation</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border: 1px solid #eee; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .header { border-bottom: 5px solid #000; padding-bottom: 20px; margin-bottom: 30px; }
-        .doc-id { font-family: monospace; background: #000; color: #fff; padding: 4px 8px; font-size: 0.9em; float: right; }
-        h1 { margin: 0; font-size: 24px; letter-spacing: 2px; }
-        h2 { border-left: 4px solid #000; padding-left: 15px; margin-top: 40px; font-size: 18px; text-transform: uppercase; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background: #f5f5f5; width: 30%; }
-        .restricted { color: #d93025; font-weight: bold; text-align: center; border: 1px solid #d93025; padding: 10px; margin: 20px 0; font-size: 12px; }
-        .footer { margin-top: 60px; font-size: 12px; color: #888; border-top: 1px solid #eee; padding-top: 20px; text-align: center; }
+        :root { --main-bg: #ffffff; --text-dark: #1a1a1a; --accent: #444; --border: #e0e0e0; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); background: #f9f9f9; margin: 0; padding: 40px 20px; }
+        .container { max-width: 950px; margin: 0 auto; background: var(--main-bg); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        .header { border-bottom: 8px solid var(--text-dark); padding-bottom: 30px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .header h1 { font-size: 32px; letter-spacing: 4px; margin: 0; font-weight: 900; }
+        .header p { margin: 5px 0 0; color: #666; font-size: 14px; letter-spacing: 2px; }
+        .restricted-box { border: 2px solid #d93025; color: #d93025; padding: 15px; text-align: center; font-size: 11px; font-weight: bold; margin-bottom: 40px; letter-spacing: 1px; }
+        h2 { font-size: 20px; text-transform: uppercase; border-bottom: 2px solid var(--text-dark); display: inline-block; margin-top: 50px; margin-bottom: 20px; }
+        h3 { font-size: 16px; margin-top: 30px; color: #333; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13px; }
+        th, td { border: 1px solid var(--border); padding: 12px; text-align: left; }
+        th { background: #fcfcfc; color: #555; width: 40%; }
+        .market-data { background: #1a1a1a; color: white; padding: 30px; border-radius: 4px; margin: 40px 0; }
+        .market-data h2 { color: white; border-color: white; }
+        .footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #eee; font-size: 12px; color: #999; display: flex; justify-content: space-between; }
+        .badge { background: #eee; padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: bold; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .container { padding: 30px; } }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <span class="doc-id">MASTER-EDA-001</span>
-            <h1>EAU DE AZRYA</h1>
-            <p>SOLVIQUE™ &nbsp;&bull;&nbsp; AROMIQUE™ &nbsp;&bull;&nbsp; PARFIQUE™</p>
+            <div>
+                <h1>EAU DE AZRYA</h1>
+                <p>SOLVIQUE™ · AROMIQUE™ · PARFIQUE™</p>
+            </div>
+            <div style="text-align: right;"><span class="badge">MASTER-EDA-001</span></div>
         </div>
 
-        <div class="restricted">DOKUMEN TERBATAS / RESTRICTED DOCUMENT<br>PROFESSIONAL USE AND AUTHORIZED PARTNERS ONLY</div>
+        <div class="restricted-box">
+            DOKUMEN TERBATAS / RESTRICTED DOCUMENT<br>
+            HANYA UNTUK PENGGUNAAN PROFESIONAL DAN MITRA YANG BERWENANG
+        </div>
 
-        <h2>1. Ringkasan Eksekutif</h2>
-        <p>Eau De Azrya mengembangkan infrastruktur formulasi parfum berbasis alkohol yang berfokus pada <strong>struktur cairan</strong>. Sistem ini memastikan distribusi dan pelepasan aroma secara stabil dan konsisten.</p>
+        <h2>1. Executive Summary</h2>
+        <p>Eau De Azrya mengembangkan infrastruktur formulasi parfum berbasis alkohol yang berfokus pada <strong>struktur cairan</strong>. Banyak parfum gagal bukan karena aromanya, tetapi karena sistem cairannya tidak mampu mendukung distribusi aroma secara konsisten. Kami menyediakan solusi stabilitas bagi brand skala kecil hingga menengah.</p>
 
-        <h2>2. Sistem Pelarut: SOLVIQUE™</h2>
+        <div class="grid">
+            <div>
+                <h3>SOLVIQUE™ (Structured Solvent)</h3>
+                <p>Pelarut utama dengan profil penguapan seimbang dan sistem penstabil terintegrasi.</p>
+                <table>
+                    <tr><th>Densitas @25°C</th><td>0,785 – 0,795 g/ml</td></tr>
+                    <tr><td>Viskositas @25°C</td><td>1,0 – 1,5 cP</td></tr>
+                    <tr><td>Kadar Air</td><td>≤ 0,1%</td></tr>
+                    <tr><td>Regulasi</td><td>Grade Kosmetik / BPOM Compliant</td></tr>
+                </table>
+            </div>
+            <div>
+                <h3>AROMIQUE™ (Performance Matrix)</h3>
+                <p>Matriks pendukung dalam dosis rendah (1-2%) untuk integrasi konsentrat aroma.</p>
+                <table>
+                    <tr><th>Viskositas @25°C</th><td>10 – 50 cP</td></tr>
+                    <tr><td>Titik Nyala</td><td>> 40°C</td></tr>
+                    <tr><td>Fungsi Utama</td><td>Emolien & Fixative Support</td></tr>
+                    <tr><td>Klasifikasi</td><td>Diffusion Modifier</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>2. PARFIQUE™: Proof of Implementation</h2>
+        <p>Validasi operasional sistem dalam bentuk parfum jadi melalui tiga varian karakter:</p>
+        <ul>
+            <li><strong>Varian 1:</strong> Segar, ringan, pembukaan jelas (Canggu style).</li>
+            <li><strong>Varian 2:</strong> Seimbang, transisi halus (Seminyak style).</li>
+            <li><strong>Varian 3:</strong> Dalam, hangat, kompleks (Uluwatu style).</li>
+        </ul>
+
+        <div class="market-data">
+            <h2>3. Market Overview & Opportunity</h2>
+            <p>Pasar parfum Indonesia diproyeksikan tumbuh pesat (CAGR 6,7% - 10%) dengan nilai estimasi <strong>USD 1,0 – 1,5 Miliar</strong> pada tahun 2030. Fokus kami pada infrastruktur menempatkan Eau De Azrya sebagai <em>enabler</em> utama di industri ini.</p>
+        </div>
+
+        <h2>4. Legalitas & Operasional</h2>
         <table>
-            <tr><th>Penampilan</th><td>Cairan jernih, tidak berwarna</td></tr>
-            <tr><td>Aroma</td><td>Alkohol netral</td></tr>
-            <tr><td>Densitas @25°C</td><td>0,785 – 0,795 g/ml</td></tr>
-            <tr><td>Viskositas @25°C</td><td>1,0 – 1,5 cP</td></tr>
-            <tr><td>Kadar Air</td><td>≤ 0,1%</td></tr>
+            <tr><th>NIB</th><td>0108250148445</td></tr>
+            <tr><th>KBLI</th><td>20232 – Industri Kosmetik untuk Manusia</td></tr>
+            <tr><th>Lokasi</th><td>Pontianak, Kalimantan Barat, Indonesia</td></tr>
+            <tr><th>Email</th><td>eaudeazrya@gmail.com</td></tr>
         </table>
-
-        <h2>3. Pendukung Performa: AROMIQUE™</h2>
-        <table>
-            <tr><th>Fungsi</th><td>Pembawa emolien, pendukung fiksatif, pengubah difusi</td></tr>
-            <tr><td>Dosis Aplikasi</td><td>1–2% dari volume konsentrat aroma</td></tr>
-            <tr><td>Densitas @25°C</td><td>0,92 – 0,96 g/ml</td></tr>
-            <tr><td>Viskositas @25°C</td><td>10 – 50 cP</td></tr>
-        </table>
-
-        <h2>4. Legalitas & Kontak</h2>
-        <p><strong>NIB:</strong> 0108250148445<br>
-        <strong>Email:</strong> eaudeazrya@gmail.com<br>
-        <strong>Lokasi:</strong> Pontianak, Kalimantan Barat, Indonesia</p>
 
         <div class="footer">
-            &copy; 2026 Eau De Azrya. Seluruh hak cipta dilindungi.<br>
-            Dokumen COA, TDS, dan SDS tersedia untuk audit profesional.
+            <div>© 2026 Eau De Azrya. All Rights Reserved.</div>
+            <div>NIB: 0108250148445 | Pontianak, Indonesia</div>
         </div>
     </div>
 </body>
