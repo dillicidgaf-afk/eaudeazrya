@@ -1,96 +1,472 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eau De Azrya | Infrastructure for Perfume Formulation</title>
-    <style>
-        :root { --main-bg: #ffffff; --text-dark: #1a1a1a; --accent: #444; --border: #e0e0e0; }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); background: #f9f9f9; margin: 0; padding: 40px 20px; }
-        .container { max-width: 950px; margin: 0 auto; background: var(--main-bg); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border); }
-        .header { border-bottom: 8px solid var(--text-dark); padding-bottom: 30px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
-        .header h1 { font-size: 32px; letter-spacing: 4px; margin: 0; font-weight: 900; }
-        .header p { margin: 5px 0 0; color: #666; font-size: 14px; letter-spacing: 2px; }
-        .restricted-box { border: 2px solid #d93025; color: #d93025; padding: 15px; text-align: center; font-size: 11px; font-weight: bold; margin-bottom: 40px; letter-spacing: 1px; }
-        h2 { font-size: 20px; text-transform: uppercase; border-bottom: 2px solid var(--text-dark); display: inline-block; margin-top: 50px; margin-bottom: 20px; }
-        h3 { font-size: 16px; margin-top: 30px; color: #333; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
-        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13px; }
-        th, td { border: 1px solid var(--border); padding: 12px; text-align: left; }
-        th { background: #fcfcfc; color: #555; width: 40%; }
-        .market-data { background: #1a1a1a; color: white; padding: 30px; border-radius: 4px; margin: 40px 0; }
-        .market-data h2 { color: white; border-color: white; }
-        .footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #eee; font-size: 12px; color: #999; display: flex; justify-content: space-between; }
-        .badge { background: #eee; padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: bold; }
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .container { padding: 30px; } }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EAU DE AZRYA</title>
+<script src="https://statics.moonshot.cn/kimi-ppt/html-gen/static/tailwindcss@4_0805.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] h-[720px] mx-auto p-[40px] box-border overflow-hidden mb-[40px];
+            }
+        }
+    </style>
+<style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div>
-                <h1>EAU DE AZRYA</h1>
-                <p>SOLVIQUE™ · AROMIQUE™ · PARFIQUE™</p>
-            </div>
-            <div style="text-align: right;"><span class="badge">MASTER-EDA-001</span></div>
-        </div>
-
-        <div class="restricted-box">
-            DOKUMEN TERBATAS / RESTRICTED DOCUMENT<br>
-            HANYA UNTUK PENGGUNAAN PROFESIONAL DAN MITRA YANG BERWENANG
-        </div>
-
-        <h2>1. Executive Summary</h2>
-        <p>Eau De Azrya mengembangkan infrastruktur formulasi parfum berbasis alkohol yang berfokus pada <strong>struktur cairan</strong>. Banyak parfum gagal bukan karena aromanya, tetapi karena sistem cairannya tidak mampu mendukung distribusi aroma secara konsisten. Kami menyediakan solusi stabilitas bagi brand skala kecil hingga menengah.</p>
-
-        <div class="grid">
-            <div>
-                <h3>SOLVIQUE™ (Structured Solvent)</h3>
-                <p>Pelarut utama dengan profil penguapan seimbang dan sistem penstabil terintegrasi.</p>
-                <table>
-                    <tr><th>Densitas @25°C</th><td>0,785 – 0,795 g/ml</td></tr>
-                    <tr><td>Viskositas @25°C</td><td>1,0 – 1,5 cP</td></tr>
-                    <tr><td>Kadar Air</td><td>≤ 0,1%</td></tr>
-                    <tr><td>Regulasi</td><td>Grade Kosmetik / BPOM Compliant</td></tr>
-                </table>
-            </div>
-            <div>
-                <h3>AROMIQUE™ (Performance Matrix)</h3>
-                <p>Matriks pendukung dalam dosis rendah (1-2%) untuk integrasi konsentrat aroma.</p>
-                <table>
-                    <tr><th>Viskositas @25°C</th><td>10 – 50 cP</td></tr>
-                    <tr><td>Titik Nyala</td><td>> 40°C</td></tr>
-                    <tr><td>Fungsi Utama</td><td>Emolien & Fixative Support</td></tr>
-                    <tr><td>Klasifikasi</td><td>Diffusion Modifier</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <h2>2. PARFIQUE™: Proof of Implementation</h2>
-        <p>Validasi operasional sistem dalam bentuk parfum jadi melalui tiga varian karakter:</p>
-        <ul>
-            <li><strong>Varian 1:</strong> Segar, ringan, pembukaan jelas (Canggu style).</li>
-            <li><strong>Varian 2:</strong> Seimbang, transisi halus (Seminyak style).</li>
-            <li><strong>Varian 3:</strong> Dalam, hangat, kompleks (Uluwatu style).</li>
-        </ul>
-
-        <div class="market-data">
-            <h2>3. Market Overview & Opportunity</h2>
-            <p>Pasar parfum Indonesia diproyeksikan tumbuh pesat (CAGR 6,7% - 10%) dengan nilai estimasi <strong>USD 1,0 – 1,5 Miliar</strong> pada tahun 2030. Fokus kami pada infrastruktur menempatkan Eau De Azrya sebagai <em>enabler</em> utama di industri ini.</p>
-        </div>
-
-        <h2>4. Legalitas & Operasional</h2>
-        <table>
-            <tr><th>NIB</th><td>0108250148445</td></tr>
-            <tr><th>KBLI</th><td>20232 – Industri Kosmetik untuk Manusia</td></tr>
-            <tr><th>Lokasi</th><td>Pontianak, Kalimantan Barat, Indonesia</td></tr>
-            <tr><th>Email</th><td>eaudeazrya@gmail.com</td></tr>
-        </table>
-
-        <div class="footer">
-            <div>© 2026 Eau De Azrya. All Rights Reserved.</div>
-            <div>NIB: 0108250148445 | Pontianak, Indonesia</div>
-        </div>
-    </div>
+<body class="bg-gray-100 py-8">
+<!-- Slide 1: Cover -->
+<div class="ppt-slide !bg-[#2C2C2C] flex flex-col justify-center items-center text-center" type="cover">
+<h1 class="text-6xl font-bold text-[#F5F5F3] mb-4">EAU DE AZRYA</h1>
+<div class="w-24 h-1 bg-[#A98C7B] mb-6"></div>
+<p class="text-2xl text-[#A98C7B] mb-4">SOLVIQUE™ · AROMIQUE™ · PARFIQUE™</p>
+<p class="text-lg text-[#8A8A8A]">Master Document | Dokumen Utama</p>
+<p class="text-sm text-[#8A8A8A] mt-8">Pontianak, Kalimantan Barat | NIB: 0108250148445</p>
+</div>
+<!-- Slide 2: Position -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">01</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Position Statement</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Pernyataan Posisi</p>
+<div class="grid grid-cols-2 gap-6 h-[480px]">
+<div class="bg-white p-6 rounded border-l-4 border-[#A98C7B]">
+<p class="text-lg leading-relaxed mb-4"><strong>Eau De Azrya</strong> bukan brand parfum konvensional.</p>
+<p class="text-lg leading-relaxed mb-4">Kami adalah <strong style="color: #A98C7B;">penyedia sistem formulasi</strong> — infrastruktur industri parfum.</p>
+<p class="text-lg leading-relaxed">Nilai utama: tingkat adopsi sistem, bukan satu lini produk.</p>
+</div>
+<div class="bg-white p-6 rounded border-l-4 border-[#8A8A8A]">
+<p class="text-lg leading-relaxed mb-4"><strong>Eau De Azrya</strong> is not a conventional perfume brand.</p>
+<p class="text-lg leading-relaxed mb-4">We are a <strong style="color: #A98C7B;">formulation system provider</strong> — perfume industry infrastructure.</p>
+<p class="text-lg leading-relaxed">Core value: system adoption rate, not a single product line.</p>
+</div>
+</div>
+</div>
+<!-- Slide 3: Problem -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">02</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">The Problem</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Permasalahan</p>
+<div class="grid grid-cols-2 gap-6 h-[480px]">
+<div class="space-y-4">
+<div class="bg-white p-5 rounded shadow-sm">
+<p class="text-lg font-semibold text-[#2C2C2C]">❌ Distribusi Tidak Merata</p>
+<p class="text-sm text-[#8A8A8A]">Uneven Component Distribution</p>
+</div>
+<div class="bg-white p-5 rounded shadow-sm">
+<p class="text-lg font-semibold text-[#2C2C2C]">❌ Transisi Aroma Tidak Stabil</p>
+<p class="text-sm text-[#8A8A8A]">Unstable Aroma Transitions</p>
+</div>
+<div class="bg-white p-5 rounded shadow-sm">
+<p class="text-lg font-semibold text-[#2C2C2C]">❌ Variasi Antar Batch</p>
+<p class="text-sm text-[#8A8A8A]">Batch-to-Batch Variation</p>
+</div>
+</div>
+<div class="bg-[#2C2C2C] p-6 rounded flex flex-col justify-center">
+<p class="text-xl text-[#F5F5F3] leading-relaxed mb-4">Masalah utama bukan pada bahan, melainkan pada sistem yang mengatur bagaimana bahan bekerja.</p>
+<p class="text-base text-[#8A8A8A] leading-relaxed italic">The core issue lies not in the materials, but in the system that governs how materials work.</p>
+</div>
+</div>
+</div>
+<!-- Slide 4: Solution -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">03</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">The Solution</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Solusi</p>
+<div class="grid grid-cols-2 gap-6 mb-4">
+<div class="bg-[#2C2C2C] p-6 rounded text-[#F5F5F3]">
+<h3 class="text-3xl font-bold text-[#A98C7B] mb-2">SOLVIQUE™</h3>
+<p class="text-base mb-1">Sistem Pelarut Terstruktur</p>
+<p class="text-sm text-[#8A8A8A] mb-4">Structured Solvent System</p>
+<p>Pelarut utama dengan profil penguapan seimbang.</p>
+</div>
+<div class="bg-[#A98C7B] p-6 rounded text-[#F5F5F3]">
+<h3 class="text-3xl font-bold mb-2">AROMIQUE™</h3>
+<p class="text-base mb-1">Sistem Pendukung Performa</p>
+<p class="text-sm text-[#2C2C2C] mb-4">Performance Support System</p>
+<p>Matriks dosis rendah untuk integrasi &amp; stabilitas aroma.</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded text-center">
+<p class="text-base text-[#2C2C2C]">Keduanya tidak menciptakan aroma baru, tetapi memungkinkan aroma yang ada bekerja lebih optimal.</p>
+<p class="text-sm text-[#8A8A8A] mt-1 italic">Neither creates new aroma; they allow existing aroma to work more optimally.</p>
+</div>
+</div>
+<!-- Slide 5: SOLVIQUE Specs -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">04</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">SOLVIQUE™</h2>
+<p class="text-lg text-[#8A8A8A] mb-4">Sistem Pelarut Terstruktur | Structured Solvent System</p>
+<div class="grid grid-cols-2 gap-6">
+<table class="w-full text-base">
+<thead><tr class="border-b-2 border-[#2C2C2C]"><th class="text-left py-2 text-[#A98C7B]">Parameter</th><th class="text-left py-2 text-[#A98C7B]">Spesifikasi</th></tr></thead>
+<tbody>
+<tr class="border-b"><td class="py-2">Penampilan</td><td>Cairan jernih</td></tr>
+<tr class="border-b"><td class="py-2">Densitas @25°C</td><td>0,785 – 0,795 g/ml</td></tr>
+<tr class="border-b"><td class="py-2">Viskositas @25°C</td><td>1,0 – 1,5 cP</td></tr>
+<tr class="border-b"><td class="py-2">Titik nyala</td><td>12 – 13°C</td></tr>
+<tr class="border-b"><td class="py-2">Kadar air</td><td>≤ 0,1%</td></tr>
+<tr><td class="py-2">Regulasi</td><td>UN1170, Kelas 3</td></tr>
+</tbody>
+</table>
+<table class="w-full text-base">
+<thead><tr class="border-b-2 border-[#8A8A8A]"><th class="text-left py-2 text-[#8A8A8A]">Parameter</th><th class="text-left py-2 text-[#8A8A8A]">Specification</th></tr></thead>
+<tbody>
+<tr class="border-b"><td class="py-2">Appearance</td><td>Clear liquid</td></tr>
+<tr class="border-b"><td class="py-2">Density @25°C</td><td>0.785 – 0.795 g/ml</td></tr>
+<tr class="border-b"><td class="py-2">Viscosity @25°C</td><td>1.0 – 1.5 cP</td></tr>
+<tr class="border-b"><td class="py-2">Flash point</td><td>12 – 13°C</td></tr>
+<tr class="border-b"><td class="py-2">Water content</td><td>≤ 0.1%</td></tr>
+<tr><td class="py-2">Regulation</td><td>UN1170, Class 3</td></tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 bg-[#2C2C2C] p-3 rounded text-center">
+<p class="text-sm text-[#F5F5F3]">Komposisi: Sistem pelarut berbasis alkohol dengan komponen penstabil</p>
+</div>
+</div>
+<!-- Slide 6: AROMIQUE Specs -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">05</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">AROMIQUE™</h2>
+<p class="text-lg text-[#8A8A8A] mb-4">Sistem Pendukung Performa | Performance Support System</p>
+<div class="grid grid-cols-2 gap-6">
+<table class="w-full text-base">
+<thead><tr class="border-b-2 border-[#A98C7B]"><th class="text-left py-2 text-[#A98C7B]">Parameter</th><th class="text-left py-2 text-[#A98C7B]">Spesifikasi</th></tr></thead>
+<tbody>
+<tr class="border-b"><td class="py-2">Penampilan</td><td>Jernih kekuningan pucat</td></tr>
+<tr class="border-b"><td class="py-2">Aroma</td><td>Ringan, ester-balsamik</td></tr>
+<tr class="border-b"><td class="py-2">Densitas @25°C</td><td>0,92 – 0,96 g/ml</td></tr>
+<tr class="border-b"><td class="py-2">Viskositas @25°C</td><td>10 – 50 cP</td></tr>
+<tr class="border-b"><td class="py-2">Titik nyala</td><td>&gt; 40°C</td></tr>
+<tr><td class="py-2">Klasifikasi</td><td>Pembawa emolien</td></tr>
+</tbody>
+</table>
+<table class="w-full text-base">
+<thead><tr class="border-b-2 border-[#8A8A8A]"><th class="text-left py-2 text-[#8A8A8A]">Parameter</th><th class="text-left py-2 text-[#8A8A8A]">Specification</th></tr></thead>
+<tbody>
+<tr class="border-b"><td class="py-2">Appearance</td><td>Clear to pale yellow</td></tr>
+<tr class="border-b"><td class="py-2">Aroma</td><td>Light, ester-balsamic</td></tr>
+<tr class="border-b"><td class="py-2">Density @25°C</td><td>0.92 – 0.96 g/ml</td></tr>
+<tr class="border-b"><td class="py-2">Viscosity @25°C</td><td>10 – 50 cP</td></tr>
+<tr class="border-b"><td class="py-2">Flash point</td><td>&gt; 40°C</td></tr>
+<tr><td class="py-2">Classification</td><td>Emollient carrier</td></tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 bg-[#A98C7B] p-3 rounded text-center">
+<p class="text-sm text-[#F5F5F3]">Komposisi: Sistem berbasis ester multi-komponen terintegrasi</p>
+</div>
+</div>
+<!-- Slide 7: PARFIQUE -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">06</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">PARFIQUE™</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Bukti Implementasi | Proof of Implementation</p>
+<div class="grid grid-cols-3 gap-6 mb-6">
+<div class="bg-white p-6 rounded text-center border-t-4 border-[#A98C7B]">
+<div class="text-4xl font-bold text-[#A98C7B] mb-2">01</div>
+<h3 class="text-xl font-bold mb-2">Varian 1</h3>
+<p class="text-base">Segar, ringan</p>
+<p class="text-sm text-[#8A8A8A] italic">Fresh, light</p>
+</div>
+<div class="bg-white p-6 rounded text-center border-t-4 border-[#8A8A8A]">
+<div class="text-4xl font-bold text-[#8A8A8A] mb-2">02</div>
+<h3 class="text-xl font-bold mb-2">Varian 2</h3>
+<p class="text-base">Seimbang, halus</p>
+<p class="text-sm text-[#8A8A8A] italic">Balanced, smooth</p>
+</div>
+<div class="bg-white p-6 rounded text-center border-t-4 border-[#2C2C2C]">
+<div class="text-4xl font-bold text-[#2C2C2C] mb-2">03</div>
+<h3 class="text-xl font-bold mb-2">Varian 3</h3>
+<p class="text-base">Dalam, hangat</p>
+<p class="text-sm text-[#8A8A8A] italic">Deep, warm</p>
+</div>
+</div>
+<div class="bg-[#2C2C2C] p-4 rounded text-center">
+<p class="text-base text-[#F5F5F3]">Validasi operasional bahwa sistem dapat diterapkan dan direplikasi dalam praktik nyata.</p>
+<p class="text-sm text-[#8A8A8A] mt-1 italic">Operational validation that the system can be applied and replicated in real practice.</p>
+</div>
+</div>
+<!-- Slide 8: Application -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">07</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Application Guidelines</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Panduan Aplikasi</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-4">
+<div class="bg-white p-5 rounded shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-[#A98C7B] flex items-center justify-center text-white font-bold mr-3">1</div>
+<h3 class="text-xl font-bold">Tahap Pertama</h3>
+</div>
+<p class="text-base">AROMIQUE™ ditambahkan ke konsentrat aroma dengan dosis <strong>1–2%</strong> dari volume konsentrat.</p>
+</div>
+<div class="bg-white p-5 rounded shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-[#2C2C2C] flex items-center justify-center text-white font-bold mr-3">2</div>
+<h3 class="text-xl font-bold">Tahap Kedua</h3>
+</div>
+<p class="text-base">Campuran dilarutkan dengan SOLVIQUE™ sebagai pelarut utama, rasio umum <strong>1:2 hingga 1:4</strong>.</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-[#8A8A8A]/10 p-5 rounded">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-[#8A8A8A] flex items-center justify-center text-white font-bold mr-3">1</div>
+<h3 class="text-xl font-bold">First Stage</h3>
+</div>
+<p class="text-base">Add AROMIQUE™ to aroma concentrate at <strong>1-2%</strong> of concentrate volume.</p>
+</div>
+<div class="bg-[#8A8A8A]/10 p-5 rounded">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-[#8A8A8A] flex items-center justify-center text-white font-bold mr-3">2</div>
+<h3 class="text-xl font-bold">Second Stage</h3>
+</div>
+<p class="text-base">Dissolve mixture in SOLVIQUE™ as primary solvent, general ratio <strong>1:2 to 1:4</strong>.</p>
+</div>
+</div>
+</div>
+<p class="text-center text-sm text-[#8A8A8A] mt-4">Gunakan alat ukur presisi untuk menjaga konsistensi. | Use precision measuring tools to maintain consistency.</p>
+</div>
+<!-- Slide 9: Indonesian Market -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">08</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Indonesian Market</h2>
+<p class="text-lg text-[#8A8A8A] mb-4">Pasar Indonesia — Berkembang Pesat</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-3">
+<div class="bg-white p-4 rounded flex justify-between items-center">
+<div><p class="text-sm text-[#8A8A8A]">Populasi Usia Muda (&lt;35 th)</p><p class="text-3xl font-bold text-[#2C2C2C]">60%+</p></div>
+<i class="fas fa-users text-3xl text-[#A98C7B]"></i>
+</div>
+<div class="bg-white p-4 rounded flex justify-between items-center">
+<div><p class="text-sm text-[#8A8A8A]">Kelas Menengah (2025)</p><p class="text-2xl font-bold text-[#2C2C2C]">48–50 Juta</p><p class="text-sm text-[#A98C7B]">Tumbuh 5%/tahun</p></div>
+<i class="fas fa-chart-line text-3xl text-[#A98C7B]"></i>
+</div>
+<div class="bg-white p-4 rounded flex justify-between items-center">
+<div><p class="text-sm text-[#8A8A8A]">CAGR (2025–2030)</p><p class="text-3xl font-bold text-[#2C2C2C]">6.7% – 10%</p></div>
+<i class="fas fa-percentage text-3xl text-[#A98C7B]"></i>
+</div>
+</div>
+<div class="space-y-3">
+<div class="bg-[#2C2C2C] p-4 rounded text-[#F5F5F3] flex justify-between items-center">
+<div><p class="text-sm text-[#8A8A8A]">Nilai Pasar (2025)</p><p class="text-2xl font-bold">USD 723–850 Juta</p></div>
+<i class="fas fa-money-bill-wave text-3xl text-[#A98C7B]"></i>
+</div>
+<div class="bg-[#A98C7B] p-4 rounded text-[#F5F5F3] flex justify-between items-center">
+<div><p class="text-sm text-[#2C2C2C]">Nilai Pasar (2030)</p><p class="text-2xl font-bold">USD 1.0–1.5 Miliar</p></div>
+<i class="fas fa-rocket text-3xl text-[#2C2C2C]"></i>
+</div>
+<div class="bg-white p-4 rounded">
+<p class="text-base font-semibold mb-2">Pendorong Utama:</p>
+<ul class="text-sm space-y-1">
+<li>• Keunggulan Halal (90%+ konsumen Muslim)</li>
+<li>• E-commerce &amp; social commerce</li>
+<li>• Pemulihan pariwisata</li>
+</ul>
+</div>
+</div>
+</div>
+<p class="text-right text-xs text-[#8A8A8A] mt-2">Sumber: StrategyHelix, Euromonitor, Statista</p>
+</div>
+<!-- Slide 10: Global Market -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">09</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Global Context</h2>
+<p class="text-lg text-[#8A8A8A] mb-4">Konteks Global — Niche &amp; Premium Memimpin</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-4">
+<div class="bg-white p-5 rounded text-center">
+<p class="text-sm text-[#8A8A8A] mb-1">Pasar Global (2026)</p><p class="text-4xl font-bold text-[#2C2C2C]">USD 86.9 Miliar</p>
+</div>
+<div class="bg-white p-5 rounded text-center">
+<p class="text-sm text-[#8A8A8A] mb-1">Pasar Global (2030)</p><p class="text-4xl font-bold text-[#A98C7B]">USD 133.5 Miliar</p>
+</div>
+<div class="bg-[#2C2C2C] p-5 rounded text-center text-[#F5F5F3]">
+<p class="text-sm text-[#8A8A8A] mb-1">CAGR Global (2025–2030)</p><p class="text-4xl font-bold">10.2% – 11.3%</p>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<div class="bg-white p-5 rounded mb-4">
+<h3 class="text-xl font-bold mb-4">Pertumbuhan Segmen</h3>
+<div class="mb-3">
+<div class="flex justify-between mb-1"><span>Niche Perfume</span><span class="font-bold text-[#A98C7B]">CAGR 9.1%</span></div>
+<div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-[#A98C7B] h-3 rounded-full" style="width: 91%"></div></div>
+</div>
+<div>
+<div class="flex justify-between mb-1"><span>Mass Market</span><span class="font-bold text-[#8A8A8A]">CAGR 2.69%</span></div>
+<div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-[#8A8A8A] h-3 rounded-full" style="width: 27%"></div></div>
+</div>
+</div>
+<div class="bg-[#A98C7B]/10 p-4 rounded">
+<p class="text-base">Segmen <strong>niche dan premium</strong> menunjukkan pertumbuhan lebih cepat.</p>
+<p class="text-sm text-[#8A8A8A] mt-1 italic">Niche and premium segments show faster growth.</p>
+</div>
+</div>
+</div>
+<p class="text-right text-xs text-[#8A8A8A] mt-2">Sumber: Research and Markets, Technavio</p>
+</div>
+<!-- Slide 11: Competition -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">10</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Competitive Analysis</h2>
+<p class="text-lg text-[#8A8A8A] mb-4">Analisis Kompetitor</p>
+<div class="bg-[#2C2C2C] p-4 rounded mb-4 text-center">
+<p class="text-lg text-[#F5F5F3]"><strong>Tidak ada kompetitor langsung</strong> yang menawarkan sistem formulasi struktural terbuka.</p>
+<p class="text-sm text-[#8A8A8A] mt-1 italic">No direct competitors offering open structural formulation systems.</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white p-4 rounded">
+<table class="w-full text-base">
+<thead><tr class="border-b-2 border-[#2C2C2C]"><th class="text-left py-2">Segmen</th><th class="text-left py-2">Contoh</th><th class="text-left py-2">Pendekatan</th></tr></thead>
+<tbody>
+<tr class="border-b"><td class="py-2">Rumah Mode Global</td><td class="py-2">LVMH, Chanel</td><td class="py-2">Sistem tertutup</td></tr>
+<tr class="border-b"><td class="py-2">Pemasok Bahan</td><td class="py-2">Firmenich</td><td class="py-2">Bahan aroma</td></tr>
+<tr class="border-b"><td class="py-2">Brand Parfum Lokal</td><td class="py-2">HMNS</td><td class="py-2">Tidak ada sistem</td></tr>
+<tr class="bg-[#A98C7B]/20"><td class="py-2 font-bold">Eau De Azrya</td><td class="py-2 font-bold">SOLVIQUE™ + AROMIQUE™</td><td class="py-2 font-bold">Sistem publik</td></tr>
+</tbody>
+</table>
+</div>
+<div class="space-y-2">
+<div class="bg-white p-3 rounded border-l-4 border-[#A98C7B]"><p class="text-base"><strong>First-mover advantage</strong> — biaya beralih tinggi</p></div>
+<div class="bg-white p-3 rounded border-l-4 border-[#A98C7B]"><p class="text-base"><strong>Trade secret protection</strong> — formula tidak diungkap</p></div>
+<div class="bg-white p-3 rounded border-l-4 border-[#A98C7B]"><p class="text-base"><strong>Dokumentasi lengkap</strong> — COA, TDS, SDS</p></div>
+<div class="bg-white p-3 rounded border-l-4 border-[#A98C7B]"><p class="text-base"><strong>Model scalable</strong> — adopsi banyak brand</p></div>
+</div>
+</div>
+</div>
+<!-- Slide 12: Business Model -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">11</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Business Model</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Model Bisnis</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-4">
+<div class="bg-white p-5 rounded shadow-sm">
+<h3 class="text-xl font-bold mb-2">Fokus Utama</h3>
+<p class="text-base">Penyediaan SOLVIQUE™ dan AROMIQUE™ sebagai komponen reusable dalam berbagai formulasi.</p>
+</div>
+<div class="bg-white p-5 rounded shadow-sm">
+<h3 class="text-xl font-bold mb-2">Posisi</h3>
+<p class="text-base">Penyedia sistem formulasi, bukan produsen aroma. Fungsi: mendukung struktur.</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-[#8A8A8A]/10 p-5 rounded">
+<h3 class="text-xl font-bold mb-2">Primary Focus</h3>
+<p class="text-base">Providing SOLVIQUE™ and AROMIQUE™ as reusable components across various formulations.</p>
+</div>
+<div class="bg-[#8A8A8A]/10 p-5 rounded">
+<h3 class="text-xl font-bold mb-2">Position</h3>
+<p class="text-base">Formulation system provider, not aroma producer. Function: supports structure.</p>
+</div>
+</div>
+</div>
+<div class="mt-4 bg-[#A98C7B] p-4 rounded text-center">
+<p class="text-base text-[#F5F5F3]">Model ini tidak bergantung pada tren dan memiliki potensi penggunaan jangka panjang.</p>
+<p class="text-sm text-[#2C2C2C] mt-1 italic">This model is not trend-dependent and has long-term usage potential.</p>
+</div>
+</div>
+<!-- Slide 13: Technical Docs -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">12</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Technical Documents</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Dokumen Teknis</p>
+<div class="grid grid-cols-3 gap-6 mb-6">
+<div class="bg-white p-6 rounded text-center">
+<i class="fas fa-certificate text-5xl text-[#A98C7B] mb-3"></i>
+<h3 class="text-2xl font-bold mb-1">COA</h3>
+<p class="text-sm text-[#8A8A8A] mb-2">Certificate of Analysis</p>
+<p class="text-base">Sertifikat Analisis</p>
+</div>
+<div class="bg-white p-6 rounded text-center">
+<i class="fas fa-file-alt text-5xl text-[#2C2C2C] mb-3"></i>
+<h3 class="text-2xl font-bold mb-1">TDS</h3>
+<p class="text-sm text-[#8A8A8A] mb-2">Technical Data Sheet</p>
+<p class="text-base">Lembar Data Teknis</p>
+</div>
+<div class="bg-white p-6 rounded text-center">
+<i class="fas fa-shield-alt text-5xl text-[#8A8A8A] mb-3"></i>
+<h3 class="text-2xl font-bold mb-1">SDS</h3>
+<p class="text-sm text-[#8A8A8A] mb-2">Safety Data Sheet</p>
+<p class="text-base">Lembar Data Keselamatan</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-[#2C2C2C] p-4 rounded text-center">
+<p class="text-base text-[#F5F5F3]">Tersedia untuk SOLVIQUE™ dan AROMIQUE™</p>
+</div>
+<div class="bg-[#A98C7B] p-4 rounded text-center">
+<p class="text-base text-[#F5F5F3]">Dokumentasi kuat sebagai penghalang masuk</p>
+</div>
+</div>
+</div>
+<!-- Slide 14: Validation -->
+<div class="ppt-slide bg-[#F5F5F3]" type="content">
+<p class="text-sm text-[#A98C7B] font-bold mb-2">13</p>
+<h2 class="text-4xl font-bold text-[#2C2C2C] mb-1">Validation</h2>
+<p class="text-lg text-[#8A8A8A] mb-6">Validasi</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-3">
+<div class="bg-white p-4 rounded border-l-4 border-[#A98C7B] flex items-center">
+<i class="fas fa-check-circle text-2xl text-[#A98C7B] mr-3"></i>
+<div>
+<p class="text-lg font-semibold">Stabilitas Meningkat</p>
+<p class="text-sm text-[#8A8A8A]">Increased Stability</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded border-l-4 border-[#A98C7B] flex items-center">
+<i class="fas fa-check-circle text-2xl text-[#A98C7B] mr-3"></i>
+<div>
+<p class="text-lg font-semibold">Distribusi Lebih Merata</p>
+<p class="text-sm text-[#8A8A8A]">More Even Distribution</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded border-l-4 border-[#A98C7B] flex items-center">
+<i class="fas fa-check-circle text-2xl text-[#A98C7B] mr-3"></i>
+<div>
+<p class="text-lg font-semibold">Transisi Aroma Terstruktur</p>
+<p class="text-sm text-[#8A8A8A]">Structured Aroma Transition</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded border-l-4 border-[#A98C7B] flex items-center">
+<i class="fas fa-check-circle text-2xl text-[#A98C7B] mr-3"></i>
+<div>
+<p class="text-lg font-semibold">Konsistensi Antar Batch</p>
+<p class="text-sm text-[#8A8A8A]">Batch-to-Batch Consistency</p>
+</div>
+</div>
+</div>
+<div class="bg-[#2C2C2C] p-6 rounded flex flex-col justify-center">
+<p class="text-xl text-[#F5F5F3] leading-relaxed mb-4">Sistem telah dievaluasi melalui observasi internal dan penggunaan terbatas pihak ketiga.</p>
+<p class="text-base text-[#8A8A8A] leading-relaxed mb-4">The system has been evaluated through internal observation and limited third-party use.</p>
+<div class="border-t border-[#8A8A8A] pt-4">
+<p class="text-base text-[#F5F5F3]">Validasi bersifat observasional dan aplikatif.</p>
+<p class="text-sm text-[#8A8A8A] mt-1 italic">Validation is observational and applied.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 15: Contact -->
+<div class="ppt-slide !bg-[#2C2C2C] flex flex-col justify-center items-center text-center" type="final">
+<h2 class="text-5xl font-bold text-[#F5F5F3] mb-4">EAU DE AZRYA</h2>
+<div class="w-24 h-1 bg-[#A98C7B] mb-8"></div>
+<div class="space-y-3 text-[#F5F5F3] text-lg">
+<p><i class="fas fa-map-marker-alt text-[#A98C7B] mr-3"></i>Pontianak, Kalimantan Barat, Indonesia</p>
+<p><i class="fas fa-envelope text-[#A98C7B] mr-3"></i>eaudeazrya@gmail.com</p>
+<p><i class="fas fa-phone text-[#A98C7B] mr-3"></i>+62 821 2269 2668</p>
+<p><i class="fab fa-instagram text-[#A98C7B] mr-3"></i>@eaudeazrya</p>
+<p class="text-base text-[#8A8A8A] mt-4">NIB: 0108250148445</p>
+</div>
+<div class="mt-10">
+<p class="text-sm text-[#8A8A8A]">© 2026 Eau De Azrya</p>
+<p class="text-xs text-[#8A8A8A] mt-1">Dokumen ini bersifat terbatas untuk penggunaan profesional</p>
+</div>
+</div>
 </body>
 </html>
